@@ -221,7 +221,7 @@ on:
       builder_name:
         description: "设置打包作者的名称"
         required: true
-        default: 'wukongdaily'
+        default: 'dahuazi666'
 
 permissions:
   contents: write
@@ -313,6 +313,7 @@ jobs:
           kernel_repo: "ophub/kernel"
           kernel_usage: flippy
           builder_name: ${{ inputs.builder_name }}
+          openwrt_files: "openwrt-armvirt-64-default-rootfs.tar.gz"
 
       - name: Rename .img.gz files
         id: rename
